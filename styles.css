@@ -1,0 +1,40 @@
+body {
+    background-color: #111;
+}
+
+.glow_animation {
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin: 20px 1px 20px;
+    color: white;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.glow_animation_subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: white;
+    margin-bottom: 20px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 182, 206), 0 0 15px rgb(248, 118, 161), 0 0 20px rgb(246, 86, 140);}
+    to {text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 15px rgb(255, 182, 206), 0 0 20px rgb(248, 118, 161), 0 0 25px rgb(246, 86, 140);}
+}
+
+.box {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(29, 29, 29);
+    position: absolute;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 750px;
+    margin: auto;
+}
